@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 import utils
-import mongo
+import mongo as mongo
 import hashlib
 
 #import smartcontract

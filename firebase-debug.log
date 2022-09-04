@@ -1,0 +1,157 @@
+[debug] [2022-09-04T13:36:13.313Z] ----------------------------------------------------------------------
+[debug] [2022-09-04T13:36:13.315Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dev johri\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-09-04T13:36:13.315Z] CLI Version:   11.8.0
+[debug] [2022-09-04T13:36:13.316Z] Platform:      win32
+[debug] [2022-09-04T13:36:13.316Z] Node Version:  v16.14.2
+[debug] [2022-09-04T13:36:13.316Z] Time:          Sun Sep 04 2022 19:06:13 GMT+0530 (India Standard Time)
+[debug] [2022-09-04T13:36:13.317Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-04T13:36:13.323Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-04T13:36:13.324Z] > authorizing via signed-in user (dev.johri15@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Dev johri\Desktop\btp-1\daiict-master
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-09-04T13:37:28.619Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-09-04T13:37:29.717Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-09-04T13:37:29.717Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project my-first-project-fda0b (MY FIRST PROJECT) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2022-09-04T13:38:23.674Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-09-04T13:38:25.880Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/firebasedatabase.googleapis.com 200
+[debug] [2022-09-04T13:38:25.881Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2022-09-04T13:38:25.881Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2022-09-04T13:38:28.080Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2022-09-04T13:38:28.080Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2022-09-04T13:38:38.086Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-09-04T13:38:40.223Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/firebasedatabase.googleapis.com 200
+[debug] [2022-09-04T13:38:40.224Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2022-09-04T13:38:40.227Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/my-first-project-fda0b/locations/-/instances/my-first-project-fda0b [none]
+[debug] [2022-09-04T13:38:41.883Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/my-first-project-fda0b/locations/-/instances/my-first-project-fda0b 200
+[debug] [2022-09-04T13:38:41.883Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/my-first-project-fda0b/locations/-/instances/my-first-project-fda0b {"name":"projects/455190332406/locations/us-central1/instances/my-first-project-fda0b","project":"projects/455190332406","databaseUrl":"https://my-first-project-fda0b.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2022-09-04T13:44:47.698Z] >>> [apiv2][query] GET https://my-first-project-fda0b.firebaseio.com/.settings/rules.json [none]
+[debug] [2022-09-04T13:44:48.462Z] <<< [apiv2][status] GET https://my-first-project-fda0b.firebaseio.com/.settings/rules.json 200
+[debug] [2022-09-04T13:44:48.462Z] <<< [apiv2][body] GET https://my-first-project-fda0b.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for my-first-project-fda0b have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2022-09-04T13:44:48.466Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/firestore.googleapis.com [none]
+[debug] [2022-09-04T13:44:50.561Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/firestore.googleapis.com 200
+[debug] [2022-09-04T13:44:50.561Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/firestore.googleapis.com [omitted]
+[debug] [2022-09-04T13:44:50.561Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/my-first-project-fda0b [none]
+[debug] [2022-09-04T13:44:51.673Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/my-first-project-fda0b 200
+[debug] [2022-09-04T13:44:51.673Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/my-first-project-fda0b {"name":"apps/my-first-project-fda0b","id":"my-first-project-fda0b","authDomain":"gmail.com","locationId":"europe-west2","codeBucket":"staging.my-first-project-fda0b.appspot.com","servingStatus":"SERVING","defaultHostname":"my-first-project-fda0b.nw.r.appspot.com","defaultBucket":"my-first-project-fda0b.appspot.com","serviceAccount":"my-first-project-fda0b@appspot.gserviceaccount.com","gcrDomain":"eu.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true}}
+[debug] [2022-09-04T13:44:51.673Z] database_type: CLOUD_FIRESTORE
+[debug] [2022-09-04T13:44:51.673Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-04T13:44:51.673Z] > authorizing via signed-in user (dev.johri15@gmail.com)
+[debug] [2022-09-04T13:44:51.673Z] [iam] checking project my-first-project-fda0b for permissions ["firebase.projects.get"]
+[debug] [2022-09-04T13:44:51.674Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-first-project-fda0b:testIamPermissions [none]
+[debug] [2022-09-04T13:44:51.674Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-first-project-fda0b:testIamPermissions x-goog-quota-user=projects/my-first-project-fda0b
+[debug] [2022-09-04T13:44:51.674Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-first-project-fda0b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-09-04T13:44:53.449Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-first-project-fda0b:testIamPermissions 200
+[debug] [2022-09-04T13:44:53.449Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-first-project-fda0b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-09-04T13:45:02.588Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/my-first-project-fda0b/releases pageSize=10&pageToken=
+[debug] [2022-09-04T13:45:04.880Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/my-first-project-fda0b/releases 200
+[debug] [2022-09-04T13:45:04.880Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/my-first-project-fda0b/releases {"releases":[{"name":"projects/my-first-project-fda0b/releases/cloud.firestore","rulesetName":"projects/my-first-project-fda0b/rulesets/2c66738b-ec26-4abc-8b68-56562b6abb28","createTime":"2019-06-01T16:28:36.240427Z","updateTime":"2019-06-01T16:28:36.240427Z"}]}
+[debug] [2022-09-04T13:45:04.880Z] Found ruleset: projects/my-first-project-fda0b/rulesets/2c66738b-ec26-4abc-8b68-56562b6abb28
+[debug] [2022-09-04T13:45:04.880Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/my-first-project-fda0b/rulesets/2c66738b-ec26-4abc-8b68-56562b6abb28 [none]
+[debug] [2022-09-04T13:45:06.482Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/my-first-project-fda0b/rulesets/2c66738b-ec26-4abc-8b68-56562b6abb28 200
+[debug] [2022-09-04T13:45:06.482Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/my-first-project-fda0b/rulesets/2c66738b-ec26-4abc-8b68-56562b6abb28 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-09-04T13:46:40.042Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/my-first-project-fda0b/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2022-09-04T13:46:40.044Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/my-first-project-fda0b/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false [none]
+[debug] [2022-09-04T13:46:42.584Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/my-first-project-fda0b/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2022-09-04T13:46:42.584Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/my-first-project-fda0b/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2022-09-04T13:46:42.752Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/my-first-project-fda0b/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false 200
+[debug] [2022-09-04T13:46:42.752Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/my-first-project-fda0b/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false {"fields":[{"name":"projects/my-first-project-fda0b/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2022-09-04T13:46:42.758Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-04T13:46:42.758Z] > authorizing via signed-in user (dev.johri15@gmail.com)
+[debug] [2022-09-04T13:46:42.758Z] [iam] checking project my-first-project-fda0b for permissions ["firebase.projects.get"]
+[debug] [2022-09-04T13:46:42.758Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-first-project-fda0b:testIamPermissions [none]
+[debug] [2022-09-04T13:46:42.758Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-first-project-fda0b:testIamPermissions x-goog-quota-user=projects/my-first-project-fda0b
+[debug] [2022-09-04T13:46:42.759Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-first-project-fda0b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-09-04T13:46:44.402Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-first-project-fda0b:testIamPermissions 200
+[debug] [2022-09-04T13:46:44.402Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-first-project-fda0b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-09-04T13:46:44.402Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-09-04T13:46:44.404Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/runtimeconfig.googleapis.com [none]
+[debug] [2022-09-04T13:46:46.346Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/runtimeconfig.googleapis.com 200
+[debug] [2022-09-04T13:46:46.346Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2022-09-04T13:46:46.358Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/cloudfunctions.googleapis.com 200
+[debug] [2022-09-04T13:46:46.358Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/my-first-project-fda0b/services/cloudfunctions.googleapis.com [omitted]
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-09-04T13:47:39.435Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-09-04T13:47:39.835Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-09-04T13:47:39.835Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.9.4","browserURL":"https://www.gstatic.com/firebasejs/9.9.4/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.9.4/firebase.tgz"},"live":{"version":"9.9","browserURL":"https://www.gstatic.com/firebasejs/live/9.9/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.9/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.9.4/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.9.4/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.9.4/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.9.4/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.9.4/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.9.4/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.9.4/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.9.4/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.9.4/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.9.4/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.9.4/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.9.4/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.9.4/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.9.4/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\Dev johri\Desktop\btp-1\daiict-master is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=561565340&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-09-04T13:47:56.824Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-09-04T13:47:56.824Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-09-04T13:47:57.495Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-09-04T13:47:57.495Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-09-04T13:47:57.499Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-09-04T13:47:58.115Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-09-04T13:47:58.115Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Darknight999","id":105712646,"node_id":"U_kgDOBk0MBg","avatar_url":"https://avatars.githubusercontent.com/u/105712646?v=4","gravatar_id":"","url":"https://api.github.com/users/Darknight999","html_url":"https://github.com/Darknight999","followers_url":"https://api.github.com/users/Darknight999/followers","following_url":"https://api.github.com/users/Darknight999/following{/other_user}","gists_url":"https://api.github.com/users/Darknight999/gists{/gist_id}","starred_url":"https://api.github.com/users/Darknight999/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Darknight999/subscriptions","organizations_url":"https://api.github.com/users/Darknight999/orgs","repos_url":"https://api.github.com/users/Darknight999/repos","events_url":"https://api.github.com/users/Darknight999/events{/privacy}","received_events_url":"https://api.github.com/users/Darknight999/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":3,"public_gists":0,"followers":0,"following":0,"created_at":"2022-05-17T09:29:36Z","updated_at":"2022-09-03T09:41:03Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Darknight999 
+[info] 
+[debug] [2022-09-04T13:48:15.352Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-09-04T13:48:15.811Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-09-04T13:48:15.811Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}

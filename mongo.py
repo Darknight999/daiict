@@ -1,23 +1,20 @@
 from passlib.hash import pbkdf2_sha256
 import pymongo
 
-# Establishing the connection
-username = "daciit"
-password = "supplychain"
+# # Establishing the connection
+# username = "daciit"
+# password = "supplychain"
 
-srv = "mongodb+srv://{}:{}@supplychain-u6nhl.mongodb.net/test?retryWrites=true&w=majority".format(
-    username, password)
-client = pymongo.MongoClient(srv)
-
+client = pymongo.MongoClient('localhost',27017)
+print("===============================")
 print("Connection Established")
-
-
-db = client['Authenication']
+ 
+db = client['Auth']
 logincol = db['Login']
 
 FeedBack = client['FeedBack']
 Message = FeedBack['Message']
-
+print(client)
 
 def Register(email, name, password, category, hashc):
 
